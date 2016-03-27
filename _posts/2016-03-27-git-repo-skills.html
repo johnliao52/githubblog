@@ -36,13 +36,25 @@ title: git, repo advance skills
 <p>
 	<ul>
 		<li>
-		switch to an android branch without downloading files from server again;can I change my current branches from gingerbread to ICS and possibly back;
-		fetch this branch based on the downloaded files:
-		<code>
-			repo forall -c git fetch aosp --tags
-			repo forall -c git checkout -b john5.1.1_r14_api22 android-5.1.1_r1
-		</code>
+			switch to an android branch without downloading files from server again;can I change my current branches from gingerbread to ICS and possibly back;
+			fetch this branch based on the downloaded files:
+			怎样基于已经下载的git仓库切换Android版本
 		</li>
+		<p>
+			repo forall -c git fetch aosp --tags; <br>
+			repo forall -c git checkout -b john5.1.1_r14_api22 android-5.1.1_r1
+		</p>
+	</ul>
+</p>
+
+<h3>useful links</h3>
+<p>
+	<ul>
+		<li>
+			<a href="https://source.android.com/source/build-numbers.html">Codenames, Tags, and Build Numbers</a>
+		</li>
+		<p>
+		</p>
 	</ul>
 </p>
 <p>{{page.date | date_to_string}}</p>
