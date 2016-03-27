@@ -1,6 +1,6 @@
 ---
 layout: default
-title: git, repo advance skills review
+title: git, repo advance skills
 ---
 
 <h2>{{page.title}}</h2>
@@ -10,7 +10,7 @@ title: git, repo advance skills review
 	<ul>
 		<li>git checkout -b branchname startpoint : make a branch named "branchname" based on the startpoint commit;以startpoint提交点为基点创建一个名为branchname的branch </li>
 		<li>git rev-parse HEAD(git symboli-ref HEAD) : show the commit hash revision value(the commit symbolic value) of HEAD pointer；</li>
-		<li>git rebase --onto master server client : </li>
+		<li>git rebase --onto master server client : check out the client branch, figure out the patches from the common ancestor of the client and server branches, and then replay them onto master; 找出从client分支和server分支的共同祖先之后到client分支的修改,在master分支上重演一遍; Normally, after this command is executed, HEAD would be detached. git symbolic-ref HEAD fails with fatal: ref HEAD is not a symbolic ref; git rev-parse HEAD yields a hash code (17a02998078923f2d62811326d130de991d1a923). To recover from this situation, try commands: git branch temp; git checkout temp; git branch -f master temp; git checkout master. 一般的, 在这条命令执行后, HEAD引用将会和master分离. git symbolic-ref HEAD会报错: HEAD引用不是一个标号引用. git rev-parse HEAD会报告一个hash code而不是一个符号. 如果要恢复的话, 可以尝试命令: git branch temp; git checkout temp; git branch -f master temp; git checkout master.</li>
 	</ul>
 <p/>
 
